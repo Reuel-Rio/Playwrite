@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230430 18:55:37.221" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="E:\Desenvolvimento\EstudosAutomacao\Belem\Robotframework\Playwrite\Test">
+<suite id="s1-s1" name="Tests" source="E:\Desenvolvimento\EstudosAutomacao\Belem\Robotframework\Playwrite\Test\tests.robot">
+<test id="s1-s1-t1" name="Test Case 1: Register User" line="5">
+<kw name="Navigate at https://automationexercise.com/ with chromium" library="keywords" sourcename="Navigate at ${URL} with ${Browser}">
+<msg timestamp="20230430 18:55:39.157" level="TRACE">Arguments: [ ${URL}='https://automationexercise.com/' | ${Browser}='chromium' ]</msg>
+<kw name="Open Browser" library="Browser">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<msg timestamp="20230430 18:55:39.158" level="TRACE">Arguments: [ 'https://automationexercise.com/' | &lt;SupportedBrowsers.chromium: 1&gt; ]</msg>
+<msg timestamp="20230430 18:55:39.158" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20230430 18:55:39.159" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "E:\\Desenvolvimento\\EstudosAutomacao\\Belem\\Robotframework\\Playwrite\\Logs\\browser\\traces\\bca4c3d3-d228-4f2c-8fba-37a0b66c9b11"}</msg>
+<msg timestamp="20230430 18:55:39.712" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"E:\\Desenvolvimento\\EstudosAutomacao\\Belem\\Robotframework\\Playwrite\\Logs\\browser\\traces\\bca4c3d3-d228-4f2c-8fba-37a0b66c9b11"}</msg>
+<msg timestamp="20230430 18:55:39.712" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "hideRfBrowser": false,
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  },
+  "deprecated_pos_args": []
+}</msg>
+<msg timestamp="20230430 18:55:39.735" level="INFO">Successfully created context. </msg>
+<msg timestamp="20230430 18:55:39.735" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'hideRfBrowser': False, 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'viewport': {'height': 720, 'width': 1280}, 'deprecated_pos_args': []}</msg>
+<msg timestamp="20230430 18:55:44.920" level="INFO">Successfully initialized new page object and opened url: https://automationexercise.com/</msg>
+<msg timestamp="20230430 18:55:44.920" level="DEBUG">Video is not enabled.</msg>
+<msg timestamp="20230430 18:55:44.920" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:39.157" endtime="20230430 18:55:44.920"/>
+</kw>
+<msg timestamp="20230430 18:55:44.921" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:39.156" endtime="20230430 18:55:44.921"/>
+</kw>
+<kw name="Espere pelo elemento ${login} e clique" library="keywords" sourcename="Espere pelo elemento ${ELEMENT} e clique">
+<msg timestamp="20230430 18:55:44.923" level="TRACE">Arguments: [ ${ELEMENT}='xpath=//*[@id="header"] //*[contains(text(), \' Signup / Login\')]' ]</msg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${ELEMENT}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230430 18:55:44.923" level="TRACE">Arguments: [ 'xpath=//*[@id="header"] //*[contains(text(), \' Signup / Login\')]' ]</msg>
+<msg timestamp="20230430 18:55:44.962" level="INFO">Waited for Element with selector xpath=//*[@id="header"] //*[contains(text(), ' Signup / Login')] at state visible</msg>
+<msg timestamp="20230430 18:55:44.962" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:44.923" endtime="20230430 18:55:44.962"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${ELEMENT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:44.963" level="TRACE">Arguments: [ 'xpath=//*[@id="header"] //*[contains(text(), \' Signup / Login\')]' ]</msg>
+<msg timestamp="20230430 18:55:44.964" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20230430 18:55:45.284" level="DEBUG">Clicked element: 'xpath=//*[@id="header"] //*[contains(text(), ' Signup / Login')]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20230430 18:55:45.284" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:44.963" endtime="20230430 18:55:45.284"/>
+</kw>
+<msg timestamp="20230430 18:55:45.285" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:44.922" endtime="20230430 18:55:45.285"/>
+</kw>
+<kw name="Espere pelo elemento ${NewUser}" library="keywords" sourcename="Espere pelo elemento ${ELEMENT}">
+<msg timestamp="20230430 18:55:45.286" level="TRACE">Arguments: [ ${ELEMENT}='xpath=//*[@id="form"] //*[contains(text(), \'New User Signup!\')]' ]</msg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${ELEMENT}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230430 18:55:45.286" level="TRACE">Arguments: [ 'xpath=//*[@id="form"] //*[contains(text(), \'New User Signup!\')]' ]</msg>
+<msg timestamp="20230430 18:55:45.372" level="INFO">Waited for Element with selector xpath=//*[@id="form"] //*[contains(text(), 'New User Signup!')] at state visible</msg>
+<msg timestamp="20230430 18:55:45.372" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.286" endtime="20230430 18:55:45.372"/>
+</kw>
+<msg timestamp="20230430 18:55:45.373" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.285" endtime="20230430 18:55:45.373"/>
+</kw>
+<kw name="Preencher com nome: ${Name} e email: ${Email}" library="keywords" sourcename="Preencher com nome: ${Name} e email: ${Email}">
+<msg timestamp="20230430 18:55:45.374" level="TRACE">Arguments: [ ${Name}='xpath=//*[@data-qa="signup-name"]' | ${Email}='xpath=//*[@data-qa="signup-email"]' ]</msg>
+<kw name="First Name" library="FakerLibrary">
+<var>${NAME_PERSON}</var>
+<msg timestamp="20230430 18:55:45.374" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.374" level="TRACE">Return: 'João Felipe'</msg>
+<msg timestamp="20230430 18:55:45.374" level="INFO">${NAME_PERSON} = João Felipe</msg>
+<status status="PASS" starttime="20230430 18:55:45.374" endtime="20230430 18:55:45.374"/>
+</kw>
+<kw name="Email" library="FakerLibrary">
+<var>${EMAIL_PERSON}</var>
+<msg timestamp="20230430 18:55:45.375" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.375" level="TRACE">Return: 'souzasophie@example.com'</msg>
+<msg timestamp="20230430 18:55:45.375" level="INFO">${EMAIL_PERSON} = souzasophie@example.com</msg>
+<status status="PASS" starttime="20230430 18:55:45.375" endtime="20230430 18:55:45.375"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${NAME_PERSON}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.375" level="TRACE">Arguments: [ '${NAME_PERSON}' ]</msg>
+<msg timestamp="20230430 18:55:45.376" level="INFO">${NAME_PERSON} = João Felipe</msg>
+<msg timestamp="20230430 18:55:45.376" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.375" endtime="20230430 18:55:45.376"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${EMAIL_PERSON}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.376" level="TRACE">Arguments: [ '${EMAIL_PERSON}' ]</msg>
+<msg timestamp="20230430 18:55:45.376" level="INFO">${EMAIL_PERSON} = souzasophie@example.com</msg>
+<msg timestamp="20230430 18:55:45.376" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.376" endtime="20230430 18:55:45.376"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Name}</arg>
+<arg>${NAME_PERSON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:45.377" level="TRACE">Arguments: [ 'xpath=//*[@data-qa="signup-name"]' | 'João Felipe' ]</msg>
+<msg timestamp="20230430 18:55:45.377" level="INFO">Types the text 'João Felipe' in the given field.</msg>
+<msg timestamp="20230430 18:55:45.435" level="DEBUG">Typed text "João Felipe" on "xpath=//*[@data-qa="signup-name"]"</msg>
+<msg timestamp="20230430 18:55:45.435" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.377" endtime="20230430 18:55:45.435"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${NAME_PERSON}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230430 18:55:45.436" level="TRACE">Arguments: [ 'João Felipe' ]</msg>
+<msg timestamp="20230430 18:55:45.436" level="INFO">João Felipe</msg>
+<msg timestamp="20230430 18:55:45.436" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.436" endtime="20230430 18:55:45.436"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Email}</arg>
+<arg>${EMAIL_PERSON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:45.436" level="TRACE">Arguments: [ 'xpath=//*[@data-qa="signup-email"]' | 'souzasophie@example.com' ]</msg>
+<msg timestamp="20230430 18:55:45.436" level="INFO">Types the text 'souzasophie@example.com' in the given field.</msg>
+<msg timestamp="20230430 18:55:45.514" level="DEBUG">Typed text "souzasophie@example.com" on "xpath=//*[@data-qa="signup-email"]"</msg>
+<msg timestamp="20230430 18:55:45.514" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.436" endtime="20230430 18:55:45.514"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${EMAIL_PERSON}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230430 18:55:45.514" level="TRACE">Arguments: [ 'souzasophie@example.com' ]</msg>
+<msg timestamp="20230430 18:55:45.514" level="INFO">souzasophie@example.com</msg>
+<msg timestamp="20230430 18:55:45.514" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.514" endtime="20230430 18:55:45.514"/>
+</kw>
+<msg timestamp="20230430 18:55:45.515" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.373" endtime="20230430 18:55:45.515"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${SubmitSingIn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:45.515" level="TRACE">Arguments: [ 'xpath=//*[@data-qa="signup-button"]' ]</msg>
+<msg timestamp="20230430 18:55:45.516" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20230430 18:55:45.808" level="DEBUG">Clicked element: 'xpath=//*[@data-qa="signup-button"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20230430 18:55:45.808" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.515" endtime="20230430 18:55:45.809"/>
+</kw>
+<kw name="Espere pelo elemento ${Title_Information}" library="keywords" sourcename="Espere pelo elemento ${ELEMENT}">
+<msg timestamp="20230430 18:55:45.810" level="TRACE">Arguments: [ ${ELEMENT}='xpath=//*[@id="form"] //*[contains(text(), \'Enter Account Information\')]' ]</msg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${ELEMENT}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230430 18:55:45.810" level="TRACE">Arguments: [ 'xpath=//*[@id="form"] //*[contains(text(), \'Enter Account Information\')]' ]</msg>
+<msg timestamp="20230430 18:55:45.918" level="INFO">Waited for Element with selector xpath=//*[@id="form"] //*[contains(text(), 'Enter Account Information')] at state visible</msg>
+<msg timestamp="20230430 18:55:45.919" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.810" endtime="20230430 18:55:45.919"/>
+</kw>
+<msg timestamp="20230430 18:55:45.919" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.809" endtime="20230430 18:55:45.919"/>
+</kw>
+<kw name="Preencher completamente o formulario de cadastro" library="keywords">
+<msg timestamp="20230430 18:55:45.920" level="TRACE">Arguments: [  ]</msg>
+<kw name="Last Name" library="FakerLibrary">
+<var>${LAST_NAME_PERSON}</var>
+<msg timestamp="20230430 18:55:45.920" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.921" level="TRACE">Return: 'da Mota'</msg>
+<msg timestamp="20230430 18:55:45.921" level="INFO">${LAST_NAME_PERSON} = da Mota</msg>
+<status status="PASS" starttime="20230430 18:55:45.920" endtime="20230430 18:55:45.921"/>
+</kw>
+<kw name="Company" library="FakerLibrary">
+<var>${COMPANY}</var>
+<doc>:example: 'Acme Ltd'</doc>
+<msg timestamp="20230430 18:55:45.921" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.921" level="TRACE">Return: 'Porto'</msg>
+<msg timestamp="20230430 18:55:45.922" level="INFO">${COMPANY} = Porto</msg>
+<status status="PASS" starttime="20230430 18:55:45.921" endtime="20230430 18:55:45.922"/>
+</kw>
+<kw name="Street Address" library="FakerLibrary">
+<var>${ADRESS1}</var>
+<doc>:example: '791 Crist Parks'</doc>
+<msg timestamp="20230430 18:55:45.922" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.922" level="TRACE">Return: 'Campo Thiago Pereira, 5'</msg>
+<msg timestamp="20230430 18:55:45.922" level="INFO">${ADRESS1} = Campo Thiago Pereira, 5</msg>
+<status status="PASS" starttime="20230430 18:55:45.922" endtime="20230430 18:55:45.922"/>
+</kw>
+<kw name="Street Address" library="FakerLibrary">
+<var>${ADRESS2}</var>
+<doc>:example: '791 Crist Parks'</doc>
+<msg timestamp="20230430 18:55:45.923" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.923" level="TRACE">Return: 'Distrito Levi Rezende, 59'</msg>
+<msg timestamp="20230430 18:55:45.923" level="INFO">${ADRESS2} = Distrito Levi Rezende, 59</msg>
+<status status="PASS" starttime="20230430 18:55:45.923" endtime="20230430 18:55:45.923"/>
+</kw>
+<kw name="State" library="FakerLibrary">
+<var>${STATE}</var>
+<msg timestamp="20230430 18:55:45.924" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.924" level="TRACE">Return: 'Pará'</msg>
+<msg timestamp="20230430 18:55:45.924" level="INFO">${STATE} = Pará</msg>
+<status status="PASS" starttime="20230430 18:55:45.924" endtime="20230430 18:55:45.924"/>
+</kw>
+<kw name="City" library="FakerLibrary">
+<var>${CITY}</var>
+<doc>:example: 'Sashabury'</doc>
+<msg timestamp="20230430 18:55:45.924" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.925" level="TRACE">Return: 'Vieira da Serra'</msg>
+<msg timestamp="20230430 18:55:45.925" level="INFO">${CITY} = Vieira da Serra</msg>
+<status status="PASS" starttime="20230430 18:55:45.924" endtime="20230430 18:55:45.925"/>
+</kw>
+<kw name="Postcode" library="FakerLibrary">
+<var>${ZIPCODE}</var>
+<doc>Randomly returns a postcode.
+:param formatted: True to allow formatted postcodes, else False (default True)
+:example formatted: '41224-212' '83992-291' '12324322'
+:example raw: '43920231' '34239530'</doc>
+<msg timestamp="20230430 18:55:45.925" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.926" level="TRACE">Return: '46889-886'</msg>
+<msg timestamp="20230430 18:55:45.926" level="INFO">${ZIPCODE} = 46889-886</msg>
+<status status="PASS" starttime="20230430 18:55:45.925" endtime="20230430 18:55:45.926"/>
+</kw>
+<kw name="Phone Number" library="FakerLibrary">
+<var>${PHONE_NUMBER}</var>
+<msg timestamp="20230430 18:55:45.926" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:45.926" level="TRACE">Return: '(031) 1174 6209'</msg>
+<msg timestamp="20230430 18:55:45.926" level="INFO">${PHONE_NUMBER} = (031) 1174 6209</msg>
+<status status="PASS" starttime="20230430 18:55:45.926" endtime="20230430 18:55:45.926"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${LAST_NAME_PERSON}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.927" level="TRACE">Arguments: [ '${LAST_NAME_PERSON}' ]</msg>
+<msg timestamp="20230430 18:55:45.927" level="INFO">${LAST_NAME_PERSON} = da Mota</msg>
+<msg timestamp="20230430 18:55:45.927" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.927" endtime="20230430 18:55:45.927"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${COMPANY}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.928" level="TRACE">Arguments: [ '${COMPANY}' ]</msg>
+<msg timestamp="20230430 18:55:45.928" level="INFO">${COMPANY} = Porto</msg>
+<msg timestamp="20230430 18:55:45.928" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.928" endtime="20230430 18:55:45.928"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ADRESS1}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.929" level="TRACE">Arguments: [ '${ADRESS1}' ]</msg>
+<msg timestamp="20230430 18:55:45.929" level="INFO">${ADRESS1} = Campo Thiago Pereira, 5</msg>
+<msg timestamp="20230430 18:55:45.929" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.929" endtime="20230430 18:55:45.929"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ADRESS2}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.930" level="TRACE">Arguments: [ '${ADRESS2}' ]</msg>
+<msg timestamp="20230430 18:55:45.930" level="INFO">${ADRESS2} = Distrito Levi Rezende, 59</msg>
+<msg timestamp="20230430 18:55:45.930" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.930" endtime="20230430 18:55:45.930"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${STATE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.931" level="TRACE">Arguments: [ '${STATE}' ]</msg>
+<msg timestamp="20230430 18:55:45.932" level="INFO">${STATE} = Pará</msg>
+<msg timestamp="20230430 18:55:45.932" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.931" endtime="20230430 18:55:45.932"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${CITY}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.933" level="TRACE">Arguments: [ '${CITY}' ]</msg>
+<msg timestamp="20230430 18:55:45.933" level="INFO">${CITY} = Vieira da Serra</msg>
+<msg timestamp="20230430 18:55:45.933" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.932" endtime="20230430 18:55:45.933"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ZIPCODE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.934" level="TRACE">Arguments: [ '${ZIPCODE}' ]</msg>
+<msg timestamp="20230430 18:55:45.934" level="INFO">${ZIPCODE} = 46889-886</msg>
+<msg timestamp="20230430 18:55:45.934" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.933" endtime="20230430 18:55:45.934"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${PHONE_NUMBER}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230430 18:55:45.934" level="TRACE">Arguments: [ '${PHONE_NUMBER}' ]</msg>
+<msg timestamp="20230430 18:55:45.935" level="INFO">${PHONE_NUMBER} = (031) 1174 6209</msg>
+<msg timestamp="20230430 18:55:45.935" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.934" endtime="20230430 18:55:45.935"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${Title_Person}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:45.936" level="TRACE">Arguments: [ 'id=id_gender1' ]</msg>
+<msg timestamp="20230430 18:55:45.938" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20230430 18:55:45.989" level="DEBUG">Clicked element: 'id=id_gender1' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20230430 18:55:45.989" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.935" endtime="20230430 18:55:45.989"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Password_Person}</arg>
+<arg>123456</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:45.989" level="TRACE">Arguments: [ 'id=password' | '123456' ]</msg>
+<msg timestamp="20230430 18:55:45.989" level="INFO">Types the text '123456' in the given field.</msg>
+<msg timestamp="20230430 18:55:46.035" level="DEBUG">Typed text "123456" on "id=password"</msg>
+<msg timestamp="20230430 18:55:46.035" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.989" endtime="20230430 18:55:46.035"/>
+</kw>
+<kw name="Scroll To Element" library="Browser">
+<arg>${Inp_Company}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<msg timestamp="20230430 18:55:46.036" level="TRACE">Arguments: [ 'id=company' ]</msg>
+<msg timestamp="20230430 18:55:46.139" level="DEBUG">Scrolled to id=company field if needed.</msg>
+<msg timestamp="20230430 18:55:46.139" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:46.036" endtime="20230430 18:55:46.139"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>${Click_day_Combobox}</arg>
+<arg>value</arg>
+<arg>18</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.139" level="TRACE">Arguments: [ 'id=days' | &lt;SelectAttribute.value: 1&gt; | '18' ]</msg>
+<msg timestamp="20230430 18:55:46.176" level="DEBUG">entry {
+  label: "Day"
+}
+entry {
+  value: "1"
+  label: "1"
+  index: 1
+}
+entry {
+  value: "2"
+  label: "2"
+  index: 2
+}
+entry {
+  value: "3"
+  label: "3"
+  index: 3
+}
+entry {
+  value: "4"
+  label: "4"
+  index: 4
+}
+entry {
+  value: "5"
+  label: "5"
+  index: 5
+}
+entry {
+  value: "6"
+  label: "6"
+  index: 6
+}
+entry {
+  value: "7"
+  label: "7"
+  index: 7
+}
+entry {
+  value: "8"
+  label: "8"
+  index: 8
+}
+entry {
+  value: "9"
+  label: "9"
+  index: 9
+}
+entry {
+  value: "10"
+  label: "10"
+  index: 10
+}
+entry {
+  value: "11"
+  label: "11"
+  index: 11
+}
+entry {
+  value: "12"
+  label: "12"
+  index: 12
+}
+entry {
+  value: "13"
+  label: "13"
+  index: 13
+}
+entry {
+  value: "14"
+  label: "14"
+  index: 14
+}
+entry {
+  value: "15"
+  label: "15"
+  index: 15
+}
+entry {
+  value: "16"
+  label: "16"
+  index: 16
+}
+entry {
+  value: "17"
+  label: "17"
+  index: 17
+}
+entry {
+  value: "18"
+  label: "18"
+  index: 18
+  selected: true
+}
+entry {
+  value: "19"
+  label: "19"
+  index: 19
+}
+entry {
+  value: "20"
+  label: "20"
+  index: 20
+}
+entry {
+  value: "21"
+  label: "21"
+  index: 21
+}
+entry {
+  value: "22"
+  label: "22"
+  index: 22
+}
+entry {
+  value: "23"
+  label: "23"
+  index: 23
+}
+entry {
+  value: "24"
+  label: "24"
+  index: 24
+}
+entry {
+  value: "25"
+  label: "25"
+  index: 25
+}
+entry {
+  value: "26"
+  label: "26"
+  index: 26
+}
+entry {
+  value: "27"
+  label: "27"
+  index: 27
+}
+entry {
+  value: "28"
+  label: "28"
+  index: 28
+}
+entry {
+  value: "29"
+  label: "29"
+  index: 29
+}
+entry {
+  value: "30"
+  label: "30"
+  index: 30
+}
+entry {
+  value: "31"
+  label: "31"
+  index: 31
+}
+</msg>
+<msg timestamp="20230430 18:55:46.177" level="TRACE">Return: ['18']</msg>
+<status status="PASS" starttime="20230430 18:55:46.139" endtime="20230430 18:55:46.177"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>${Click_month_Combobox}</arg>
+<arg>value</arg>
+<arg>7</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.178" level="TRACE">Arguments: [ 'id=months' | &lt;SelectAttribute.value: 1&gt; | '7' ]</msg>
+<msg timestamp="20230430 18:55:46.206" level="DEBUG">entry {
+  label: "Month"
+}
+entry {
+  value: "1"
+  label: "January"
+  index: 1
+}
+entry {
+  value: "2"
+  label: "February"
+  index: 2
+}
+entry {
+  value: "3"
+  label: "March"
+  index: 3
+}
+entry {
+  value: "4"
+  label: "April"
+  index: 4
+}
+entry {
+  value: "5"
+  label: "May"
+  index: 5
+}
+entry {
+  value: "6"
+  label: "June"
+  index: 6
+}
+entry {
+  value: "7"
+  label: "July"
+  index: 7
+  selected: true
+}
+entry {
+  value: "8"
+  label: "August"
+  index: 8
+}
+entry {
+  value: "9"
+  label: "September"
+  index: 9
+}
+entry {
+  value: "10"
+  label: "October"
+  index: 10
+}
+entry {
+  value: "11"
+  label: "November"
+  index: 11
+}
+entry {
+  value: "12"
+  label: "December"
+  index: 12
+}
+</msg>
+<msg timestamp="20230430 18:55:46.206" level="TRACE">Return: ['7']</msg>
+<status status="PASS" starttime="20230430 18:55:46.177" endtime="20230430 18:55:46.206"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>${Click_year_Combobox}</arg>
+<arg>value</arg>
+<arg>1970</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.207" level="TRACE">Arguments: [ 'id=years' | &lt;SelectAttribute.value: 1&gt; | '1970' ]</msg>
+<msg timestamp="20230430 18:55:46.244" level="DEBUG">entry {
+  label: "Year"
+}
+entry {
+  value: "2021"
+  label: "2021"
+  index: 1
+}
+entry {
+  value: "2020"
+  label: "2020"
+  index: 2
+}
+entry {
+  value: "2019"
+  label: "2019"
+  index: 3
+}
+entry {
+  value: "2018"
+  label: "2018"
+  index: 4
+}
+entry {
+  value: "2017"
+  label: "2017"
+  index: 5
+}
+entry {
+  value: "2016"
+  label: "2016"
+  index: 6
+}
+entry {
+  value: "2015"
+  label: "2015"
+  index: 7
+}
+entry {
+  value: "2014"
+  label: "2014"
+  index: 8
+}
+entry {
+  value: "2013"
+  label: "2013"
+  index: 9
+}
+entry {
+  value: "2012"
+  label: "2012"
+  index: 10
+}
+entry {
+  value: "2011"
+  label: "2011"
+  index: 11
+}
+entry {
+  value: "2010"
+  label: "2010"
+  index: 12
+}
+entry {
+  value: "2009"
+  label: "2009"
+  index: 13
+}
+entry {
+  value: "2008"
+  label: "2008"
+  index: 14
+}
+entry {
+  value: "2007"
+  label: "2007"
+  index: 15
+}
+entry {
+  value: "2006"
+  label: "2006"
+  index: 16
+}
+entry {
+  value: "2005"
+  label: "2005"
+  index: 17
+}
+entry {
+  value: "2004"
+  label: "2004"
+  index: 18
+}
+entry {
+  value: "2003"
+  label: "2003"
+  index: 19
+}
+entry {
+  value: "2002"
+  label: "2002"
+  index: 20
+}
+entry {
+  value: "2001"
+  label: "2001"
+  index: 21
+}
+entry {
+  value: "2000"
+  label: "2000"
+  index: 22
+}
+entry {
+  value: "1999"
+  label: "1999"
+  index: 23
+}
+entry {
+  value: "1998"
+  label: "1998"
+  index: 24
+}
+entry {
+  value: "1997"
+  label: "1997"
+  index: 25
+}
+entry {
+  value: "1996"
+  label: "1996"
+  index: 26
+}
+entry {
+  value: "1995"
+  label: "1995"
+  index: 27
+}
+entry {
+  value: "1994"
+  label: "1994"
+  index: 28
+}
+entry {
+  value: "1993"
+  label: "1993"
+  index: 29
+}
+entry {
+  value: "1992"
+  label: "1992"
+  index: 30
+}
+entry {
+  value: "1991"
+  label: "1991"
+  index: 31
+}
+entry {
+  value: "1990"
+  label: "1990"
+  index: 32
+}
+entry {
+  value: "1989"
+  label: "1989"
+  index: 33
+}
+entry {
+  value: "1988"
+  label: "1988"
+  index: 34
+}
+entry {
+  value: "1987"
+  label: "1987"
+  index: 35
+}
+entry {
+  value: "1986"
+  label: "1986"
+  index: 36
+}
+entry {
+  value: "1985"
+  label: "1985"
+  index: 37
+}
+entry {
+  value: "1984"
+  label: "1984"
+  index: 38
+}
+entry {
+  value: "1983"
+  label: "1983"
+  index: 39
+}
+entry {
+  value: "1982"
+  label: "1982"
+  index: 40
+}
+entry {
+  value: "1981"
+  label: "1981"
+  index: 41
+}
+entry {
+  value: "1980"
+  label: "1980"
+  index: 42
+}
+entry {
+  value: "1979"
+  label: "1979"
+  index: 43
+}
+entry {
+  value: "1978"
+  label: "1978"
+  index: 44
+}
+entry {
+  value: "1977"
+  label: "1977"
+  index: 45
+}
+entry {
+  value: "1976"
+  label: "1976"
+  index: 46
+}
+entry {
+  value: "1975"
+  label: "1975"
+  index: 47
+}
+entry {
+  value: "1974"
+  label: "1974"
+  index: 48
+}
+entry {
+  value: "1973"
+  label: "1973"
+  index: 49
+}
+entry {
+  value: "1972"
+  label: "1972"
+  index: 50
+}
+entry {
+  value: "1971"
+  label: "1971"
+  index: 51
+}
+entry {
+  value: "1970"
+  label: "1970"
+  index: 52
+  selected: true
+}
+entry {
+  value: "1969"
+  label: "1969"
+  index: 53
+}
+entry {
+  value: "1968"
+  label: "1968"
+  index: 54
+}
+entry {
+  value: "1967"
+  label: "1967"
+  index: 55
+}
+entry {
+  value: "1966"
+  label: "1966"
+  index: 56
+}
+entry {
+  value: "1965"
+  label: "1965"
+  index: 57
+}
+entry {
+  value: "1964"
+  label: "1964"
+  index: 58
+}
+entry {
+  value: "1963"
+  label: "1963"
+  index: 59
+}
+entry {
+  value: "1962"
+  label: "1962"
+  index: 60
+}
+entry {
+  value: "1961"
+  label: "1961"
+  index: 61
+}
+entry {
+  value: "1960"
+  label: "1960"
+  index: 62
+}
+entry {
+  value: "1959"
+  label: "1959"
+  index: 63
+}
+entry {
+  value: "1958"
+  label: "1958"
+  index: 64
+}
+entry {
+  value: "1957"
+  label: "1957"
+  index: 65
+}
+entry {
+  value: "1956"
+  label: "1956"
+  index: 66
+}
+entry {
+  value: "1955"
+  label: "1955"
+  index: 67
+}
+entry {
+  value: "1954"
+  label: "1954"
+  index: 68
+}
+entry {
+  value: "1953"
+  label: "1953"
+  index: 69
+}
+entry {
+  value: "1952"
+  label: "1952"
+  index: 70
+}
+entry {
+  value: "1951"
+  label: "1951"
+  index: 71
+}
+entry {
+  value: "1950"
+  label: "1950"
+  index: 72
+}
+entry {
+  value: "1949"
+  label: "1949"
+  index: 73
+}
+entry {
+  value: "1948"
+  label: "1948"
+  index: 74
+}
+entry {
+  value: "1947"
+  label: "1947"
+  index: 75
+}
+entry {
+  value: "1946"
+  label: "1946"
+  index: 76
+}
+entry {
+  value: "1945"
+  label: "1945"
+  index: 77
+}
+entry {
+  value: "1944"
+  label: "1944"
+  index: 78
+}
+entry {
+  value: "1943"
+  label: "1943"
+  index: 79
+}
+entry {
+  value: "1942"
+  label: "1942"
+  index: 80
+}
+entry {
+  value: "1941"
+  label: "1941"
+  index: 81
+}
+entry {
+  value: "1940"
+  label: "1940"
+  index: 82
+}
+entry {
+  value: "1939"
+  label: "1939"
+  index: 83
+}
+entry {
+  value: "1938"
+  label: "1938"
+  index: 84
+}
+entry {
+  value: "1937"
+  label: "1937"
+  index: 85
+}
+entry {
+  value: "1936"
+  label: "1936"
+  index: 86
+}
+entry {
+  value: "1935"
+  label: "1935"
+  index: 87
+}
+entry {
+  value: "1934"
+  label: "1934"
+  index: 88
+}
+entry {
+  value: "1933"
+  label: "1933"
+  index: 89
+}
+entry {
+  value: "1932"
+  label: "1932"
+  index: 90
+}
+entry {
+  value: "1931"
+  label: "1931"
+  index: 91
+}
+entry {
+  value: "1930"
+  label: "1930"
+  index: 92
+}
+entry {
+  value: "1929"
+  label: "1929"
+  index: 93
+}
+entry {
+  value: "1928"
+  label: "1928"
+  index: 94
+}
+entry {
+  value: "1927"
+  label: "1927"
+  index: 95
+}
+entry {
+  value: "1926"
+  label: "1926"
+  index: 96
+}
+entry {
+  value: "1925"
+  label: "1925"
+  index: 97
+}
+entry {
+  value: "1924"
+  label: "1924"
+  index: 98
+}
+entry {
+  value: "1923"
+  label: "1923"
+  index: 99
+}
+entry {
+  value: "1922"
+  label: "1922"
+  index: 100
+}
+entry {
+  value: "1921"
+  label: "1921"
+  index: 101
+}
+entry {
+  value: "1920"
+  label: "1920"
+  index: 102
+}
+entry {
+  value: "1919"
+  label: "1919"
+  index: 103
+}
+entry {
+  value: "1918"
+  label: "1918"
+  index: 104
+}
+entry {
+  value: "1917"
+  label: "1917"
+  index: 105
+}
+entry {
+  value: "1916"
+  label: "1916"
+  index: 106
+}
+entry {
+  value: "1915"
+  label: "1915"
+  index: 107
+}
+entry {
+  value: "1914"
+  label: "1914"
+  index: 108
+}
+entry {
+  value: "1913"
+  label: "1913"
+  index: 109
+}
+entry {
+  value: "1912"
+  label: "1912"
+  index: 110
+}
+entry {
+  value: "1911"
+  label: "1911"
+  index: 111
+}
+entry {
+  value: "1910"
+  label: "1910"
+  index: 112
+}
+entry {
+  value: "1909"
+  label: "1909"
+  index: 113
+}
+entry {
+  value: "1908"
+  label: "1908"
+  index: 114
+}
+entry {
+  value: "1907"
+  label: "1907"
+  index: 115
+}
+entry {
+  value: "1906"
+  label: "1906"
+  index: 116
+}
+entry {
+  value: "1905"
+  label: "1905"
+  index: 117
+}
+entry {
+  value: "1904"
+  label: "1904"
+  index: 118
+}
+entry {
+  value: "1903"
+  label: "1903"
+  index: 119
+}
+entry {
+  value: "1902"
+  label: "1902"
+  index: 120
+}
+entry {
+  value: "1901"
+  label: "1901"
+  index: 121
+}
+entry {
+  value: "1900"
+  label: "1900"
+  index: 122
+}
+</msg>
+<msg timestamp="20230430 18:55:46.244" level="TRACE">Return: ['1970']</msg>
+<status status="PASS" starttime="20230430 18:55:46.206" endtime="20230430 18:55:46.244"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${Checkbox_newsletter}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.245" level="TRACE">Arguments: [ 'id=newsletter' ]</msg>
+<msg timestamp="20230430 18:55:46.245" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20230430 18:55:46.342" level="DEBUG">Clicked element: 'id=newsletter' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20230430 18:55:46.342" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:46.244" endtime="20230430 18:55:46.342"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${Checkbox_receive}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.343" level="TRACE">Arguments: [ 'id=optin' ]</msg>
+<msg timestamp="20230430 18:55:46.343" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20230430 18:55:46.390" level="DEBUG">Clicked element: 'id=optin' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20230430 18:55:46.390" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:46.342" endtime="20230430 18:55:46.390"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${First_Name}</arg>
+<arg>${NAME_PERSON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.391" level="TRACE">Arguments: [ 'id=first_name' | 'João Felipe' ]</msg>
+<msg timestamp="20230430 18:55:46.391" level="INFO">Types the text 'João Felipe' in the given field.</msg>
+<msg timestamp="20230430 18:55:46.467" level="DEBUG">Typed text "João Felipe" on "id=first_name"</msg>
+<msg timestamp="20230430 18:55:46.467" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:46.390" endtime="20230430 18:55:46.467"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Last_Name}</arg>
+<arg>${LAST_NAME_PERSON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.468" level="TRACE">Arguments: [ 'id=last_name' | 'da Mota' ]</msg>
+<msg timestamp="20230430 18:55:46.468" level="INFO">Types the text 'da Mota' in the given field.</msg>
+<msg timestamp="20230430 18:55:46.524" level="DEBUG">Typed text "da Mota" on "id=last_name"</msg>
+<msg timestamp="20230430 18:55:46.525" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:46.468" endtime="20230430 18:55:46.525"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Inp_Company}</arg>
+<arg>${COMPANY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.526" level="TRACE">Arguments: [ 'id=company' | 'Porto' ]</msg>
+<msg timestamp="20230430 18:55:46.526" level="INFO">Types the text 'Porto' in the given field.</msg>
+<msg timestamp="20230430 18:55:46.573" level="DEBUG">Typed text "Porto" on "id=company"</msg>
+<msg timestamp="20230430 18:55:46.574" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:46.525" endtime="20230430 18:55:46.574"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Inp_Adress1}</arg>
+<arg>${ADRESS1}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.574" level="TRACE">Arguments: [ 'id=address1' | 'Campo Thiago Pereira, 5' ]</msg>
+<msg timestamp="20230430 18:55:46.574" level="INFO">Types the text 'Campo Thiago Pereira, 5' in the given field.</msg>
+<msg timestamp="20230430 18:55:46.841" level="DEBUG">Typed text "Campo Thiago Pereira, 5" on "id=address1"</msg>
+<msg timestamp="20230430 18:55:46.841" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:46.574" endtime="20230430 18:55:46.842"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Inp_Adress2}</arg>
+<arg>${ADRESS2}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:46.842" level="TRACE">Arguments: [ 'id=address2' | 'Distrito Levi Rezende, 59' ]</msg>
+<msg timestamp="20230430 18:55:46.843" level="INFO">Types the text 'Distrito Levi Rezende, 59' in the given field.</msg>
+<msg timestamp="20230430 18:55:47.117" level="DEBUG">Typed text "Distrito Levi Rezende, 59" on "id=address2"</msg>
+<msg timestamp="20230430 18:55:47.117" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:46.842" endtime="20230430 18:55:47.117"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>${Click_contry_Combobox}</arg>
+<arg>value</arg>
+<arg>Israel</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:47.118" level="TRACE">Arguments: [ 'id=country' | &lt;SelectAttribute.value: 1&gt; | 'Israel' ]</msg>
+<msg timestamp="20230430 18:55:47.175" level="DEBUG">entry {
+  value: "India"
+  label: "India"
+}
+entry {
+  value: "United States"
+  label: "United States"
+  index: 1
+}
+entry {
+  value: "Canada"
+  label: "Canada"
+  index: 2
+}
+entry {
+  value: "Australia"
+  label: "Australia"
+  index: 3
+}
+entry {
+  value: "Israel"
+  label: "Israel"
+  index: 4
+  selected: true
+}
+entry {
+  value: "New Zealand"
+  label: "New Zealand"
+  index: 5
+}
+entry {
+  value: "Singapore"
+  label: "Singapore"
+  index: 6
+}
+</msg>
+<msg timestamp="20230430 18:55:47.175" level="TRACE">Return: ['Israel']</msg>
+<status status="PASS" starttime="20230430 18:55:47.117" endtime="20230430 18:55:47.175"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Inp_State}</arg>
+<arg>${STATE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:47.176" level="TRACE">Arguments: [ 'id=state' | 'Pará' ]</msg>
+<msg timestamp="20230430 18:55:47.176" level="INFO">Types the text 'Pará' in the given field.</msg>
+<msg timestamp="20230430 18:55:47.239" level="DEBUG">Typed text "Pará" on "id=state"</msg>
+<msg timestamp="20230430 18:55:47.240" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:47.175" endtime="20230430 18:55:47.240"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Inp_City}</arg>
+<arg>${CITY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:47.241" level="TRACE">Arguments: [ 'id=city' | 'Vieira da Serra' ]</msg>
+<msg timestamp="20230430 18:55:47.241" level="INFO">Types the text 'Vieira da Serra' in the given field.</msg>
+<msg timestamp="20230430 18:55:47.391" level="DEBUG">Typed text "Vieira da Serra" on "id=city"</msg>
+<msg timestamp="20230430 18:55:47.392" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:47.240" endtime="20230430 18:55:47.392"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Inp_Zipcode}</arg>
+<arg>${ZIPCODE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:47.392" level="TRACE">Arguments: [ 'id=zipcode' | '46889-886' ]</msg>
+<msg timestamp="20230430 18:55:47.392" level="INFO">Types the text '46889-886' in the given field.</msg>
+<msg timestamp="20230430 18:55:47.480" level="DEBUG">Typed text "46889-886" on "id=zipcode"</msg>
+<msg timestamp="20230430 18:55:47.481" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:47.392" endtime="20230430 18:55:47.481"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${Inp_Mobile}</arg>
+<arg>${PHONE_NUMBER}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:47.481" level="TRACE">Arguments: [ 'id=mobile_number' | '(031) 1174 6209' ]</msg>
+<msg timestamp="20230430 18:55:47.481" level="INFO">Types the text '(031) 1174 6209' in the given field.</msg>
+<msg timestamp="20230430 18:55:47.591" level="DEBUG">Typed text "(031) 1174 6209" on "id=mobile_number"</msg>
+<msg timestamp="20230430 18:55:47.591" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:47.481" endtime="20230430 18:55:47.591"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${Submit_Form}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:47.592" level="TRACE">Arguments: [ 'xpath=//*[@data-qa="create-account"]' ]</msg>
+<msg timestamp="20230430 18:55:47.593" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20230430 18:55:49.119" level="DEBUG">Clicked element: 'xpath=//*[@data-qa="create-account"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20230430 18:55:49.119" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:47.592" endtime="20230430 18:55:49.119"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${Title_count_create}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230430 18:55:49.120" level="TRACE">Arguments: [ 'xpath=//*[@id="form"]//*[contains(text(),"Account Created!")]' ]</msg>
+<msg timestamp="20230430 18:55:49.162" level="INFO">Waited for Element with selector xpath=//*[@id="form"]//*[contains(text(),"Account Created!")] at state visible</msg>
+<msg timestamp="20230430 18:55:49.163" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:49.120" endtime="20230430 18:55:49.163"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${Btn_continue}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:49.163" level="TRACE">Arguments: [ 'xpath=//*[@data-qa="continue-button"]' ]</msg>
+<msg timestamp="20230430 18:55:49.165" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20230430 18:55:50.011" level="DEBUG">Clicked element: 'xpath=//*[@data-qa="continue-button"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20230430 18:55:50.012" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:49.163" endtime="20230430 18:55:50.012"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>xpath=//*[@id="header"]//*[contains(text(),"${NAME_PERSON}")]</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230430 18:55:50.013" level="TRACE">Arguments: [ 'xpath=//*[@id="header"]//*[contains(text(),"João Felipe")]' ]</msg>
+<msg timestamp="20230430 18:55:50.201" level="INFO">Waited for Element with selector xpath=//*[@id="header"]//*[contains(text(),"João Felipe")] at state visible</msg>
+<msg timestamp="20230430 18:55:50.201" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:50.012" endtime="20230430 18:55:50.201"/>
+</kw>
+<msg timestamp="20230430 18:55:50.202" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:45.920" endtime="20230430 18:55:50.202"/>
+</kw>
+<kw name="Excluir usuario logado" library="keywords">
+<msg timestamp="20230430 18:55:50.203" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${Btn_Delet_user}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230430 18:55:50.203" level="TRACE">Arguments: [ 'xpath=//*[@id="header"]//*[contains(text()," Delete Account")]' ]</msg>
+<msg timestamp="20230430 18:55:50.218" level="INFO">Waited for Element with selector xpath=//*[@id="header"]//*[contains(text()," Delete Account")] at state visible</msg>
+<msg timestamp="20230430 18:55:50.219" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:50.203" endtime="20230430 18:55:50.219"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${Btn_Delet_user}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:50.220" level="TRACE">Arguments: [ 'xpath=//*[@id="header"]//*[contains(text()," Delete Account")]' ]</msg>
+<msg timestamp="20230430 18:55:50.221" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20230430 18:55:51.016" level="DEBUG">Clicked element: 'xpath=//*[@id="header"]//*[contains(text()," Delete Account")]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20230430 18:55:51.016" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:50.219" endtime="20230430 18:55:51.016"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${Title_Delete}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230430 18:55:51.016" level="TRACE">Arguments: [ 'xpath=//*[@id="form"]//*[contains(text(),"Account Deleted!")]' ]</msg>
+<msg timestamp="20230430 18:55:51.097" level="INFO">Waited for Element with selector xpath=//*[@id="form"]//*[contains(text(),"Account Deleted!")] at state visible</msg>
+<msg timestamp="20230430 18:55:51.098" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:51.016" endtime="20230430 18:55:51.098"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${Btn_continue}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20230430 18:55:51.098" level="TRACE">Arguments: [ 'xpath=//*[@data-qa="continue-button"]' ]</msg>
+<msg timestamp="20230430 18:55:51.099" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20230430 18:55:51.406" level="DEBUG">Clicked element: 'xpath=//*[@data-qa="continue-button"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20230430 18:55:51.406" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:51.098" endtime="20230430 18:55:51.406"/>
+</kw>
+<msg timestamp="20230430 18:55:51.407" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:50.202" endtime="20230430 18:55:51.407"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230430 18:55:51.408" level="TRACE">Arguments: [ '5s' ]</msg>
+<msg timestamp="20230430 18:55:56.408" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20230430 18:55:56.408" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:51.407" endtime="20230430 18:55:56.408"/>
+</kw>
+<kw name="Close Browser" library="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<msg timestamp="20230430 18:55:56.409" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230430 18:55:56.895" level="INFO">Closed browser</msg>
+<msg timestamp="20230430 18:55:56.895" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230430 18:55:56.409" endtime="20230430 18:55:56.895"/>
+</kw>
+<status status="PASS" starttime="20230430 18:55:39.152" endtime="20230430 18:55:56.895"/>
+</test>
+<status status="PASS" starttime="20230430 18:55:37.251" endtime="20230430 18:55:56.906"/>
+</suite>
+<status status="PASS" starttime="20230430 18:55:37.223" endtime="20230430 18:55:56.913"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Test.Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230430 18:55:39.158" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

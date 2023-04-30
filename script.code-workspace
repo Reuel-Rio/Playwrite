@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"rfLanguageServer.libraries": [
+			"BuiltIn-3.1.1",
+			"Collections-3.1.1",
+			"DateTime-3.1.1",
+			"Dialogs-3.1.1",
+			"OperatingSystem-3.1.1",
+			"Process-3.1.1",
+			"Screenshot-3.1.1",
+			"Telnet-3.1.1",
+			"XML-3.1.1",
+			"Fakerlib"
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "blazorwasm",
+				"name": "Launch and Debug Blazor WebAssembly Application",
+				"request": "launch"
+			}
+		]
+	}
+}
