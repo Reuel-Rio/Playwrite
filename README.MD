@@ -9,4 +9,4 @@
 7. rfbrowser init
 8. para iniciar os testes digite no console na pasta raiz do projeto: robot -d ./Logs -L trace  ./Test
 
-### Com isso ele irá criar uma pasta "Logs" onde terá as metricas dos testes.
+### Com o passo 8, isso irá criar uma pasta "Logs" onde terá as metricas dos testes.
